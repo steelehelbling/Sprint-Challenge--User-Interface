@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: black solid 1px;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -143,4 +143,137 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
+
+
+/*
+my code starts here
+*/
+
+
+
+.rightleft{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+    
+   
+}
+header nav a{
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.sizer img{
+    padding: 30px 0 30px 0;
+    width: 100%;
+}
+.text1{
+    padding: 20px;
+    border-bottom: 1px dashed black;
+}
+
+/*
+main wrap
+*/
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0 30px 0;
+}
+.itembox{
+width: 45%;
+margin-top: 15px;
+border-bottom: 1px dashed black;
+}
+.itembox h1{
+    margin: 10px 0 ;
+}
+.itembox img{
+    width: 100%;
+}
+.itembox button{
+    margin: 15px 0 15px 0;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.text2{
+    padding: 20px;
+    padding-bottom: 40px;
+}
+/*
+box coloring
+*/
+#box1{background-color: teal}
+ #box2{background-color: gold}
+ #box3{background-color: cadetblue}
+ #box4{background-color: coral}
+ #box5{background-color: crimson}
+ #box6{background-color: forestgreen}
+ #box7{background-color: darkorchid}
+ #box8{background-color: hotpink}
+ #box9{background-color: indigo}
+ #box10{background-color: dodgerblue}
+
+
+ /*
+ media quareys
+ */
+ @media (width:500px){
+*{
+    
+}
+.container {
+    width: 450px;
+    margin: 0 auto;
+}
+.wrap{
+    flex-direction: column;
+}
+.itembox{
+    width: 100%;
+    
+}
+.itembox img{
+    width: 100%;
+}
+.rightleft{
+    flex-direction: column;
+}
+header nav{
+    width: 100%;
+}
+header img{
+    height: 140px;
+    width: 80%;
+   padding-bottom: 50px;
+   
+margin-left: 30px;
+}
+
+footer nav{
+   width: 100%;
+}
+.sizer img{
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+.bottom-content{
+    flex-direction: column;
+}
+ }
+
+
